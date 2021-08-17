@@ -46,14 +46,14 @@ line = 'FearG I\n{}\nEquity: {} [{}]\nCrypto: {} [{}]\nTBond-3mth: {}\nTBond-10y
 
 # Find these values at https://twilio.com/user/account
 # To set up environmental variables, see http://twil.io/secure
-account_sid = 'ACb40a412f37b9e8c42d658d1920bf38e7'
-auth_token = '5da9dea38bb3d4fc120527bb1e70f736'
+account_sid = '' # your acc id from twilio
+auth_token = '' # your auth token twilio
 
 client = Client(account_sid, auth_token)
 
 message = client.api.account.messages.create(
-    to='+15404497818',
-    from_='+12568671232',
+    to='', # phone number
+    from_='', # phone number
     body=line)
 
 # print(type(int(ts)))
